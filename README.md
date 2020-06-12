@@ -28,7 +28,7 @@ Im Wesentlichen wurden nur Kleinigkeiten geändert:
 
 3. Kommentierung der Config
 
-4. Beim Auto-PID-tuning wurden kleine Pausen eingebaut (gab gelegentlich Probleme beim Speichern)
+4. Beim Auto-PID-Tuning wurde die Bett-Temperatur auf 70°C angepasst
 
 5. Save to Eeprom hat einen Farbumschlag bekommen: Rot -> Speichern -> Grün
 
@@ -43,6 +43,12 @@ Babystepping während des Drucks funktioniert, kann allerdings nicht im EEPROM g
 (M851 ist nicht möglich, wenn MBL aktiviert ist!)  
 Näheres dazu: https://github.com/MarlinFirmware/Marlin/issues/3394  
 Der "Save to EEPROM" Button im Druckmenü ist also streng genommen überflüssig.
+
+Es wurde versucht die LED (Grün) nach PID abzuschalten - geht nicht (warum auch immer....Befehlskette zu lang?!).  
+Ebenfalls wurde versucht die Ablaufreihenfolge von PID Nozzle und PID Bett anzugleichen -> Probleme:  
+Nach PID Nozzle muss erst ein anderer Befehl vorm Speichern kommen (LED Gelb).  
+Nach PID Bed muss zwingend zuerst der M500 Befehl kommen, sonst wird nicht gespeichert.  
+Der jetzige Zustand wurde mehrfach getestet -> so läuft es!  
     
 ## Verlauf  
 **12.06.2020** - Erste Überarbeitung/Anpassung der 3D-Nexus-TFT-Firmware
