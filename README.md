@@ -31,9 +31,15 @@ Im Wesentlichen wurden nur Kleinigkeiten geändert:
 4. Beim Auto-PID-tuning wurden kleine Pausen eingebaut (gab gelegentlich Probleme beim Speichern)
 
 5. Save to Eeprom hat einen Farbumschlag bekommen: Rot -> Speichern -> Grün
+
+6. Name wurde im Bootscreen hinzugefügt (um Verwechslungen zu vermeiden)
   
 ## Sonstiges  
- 
+Test & Forschung ergab;
+Babystepping während des Drucks funktioniert, kann allerdings nicht im EEPROM gespeichert werden!  
+(M851 ist nicht möglich, wenn MBL aktiviert ist!)  
+Näheres dazu: https://github.com/MarlinFirmware/Marlin/issues/3394  
+Der "Save to EEPROM" Button im Druckmenü ist also streng genommen überflüssig.
     
 ## Verlauf  
 **12.06.2020** - Erste Überarbeitung/Anpassung der 3D-Nexus-TFT-Firmware
