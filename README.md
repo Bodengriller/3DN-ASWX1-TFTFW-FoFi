@@ -33,6 +33,9 @@ Im Wesentlichen wurden nur Kleinigkeiten geändert:
 5. Save to Eeprom hat einen Farbumschlag bekommen: Rot -> Speichern -> Grün
 
 6. Name wurde im Bootscreen hinzugefügt (um Verwechslungen zu vermeiden)
+
+![Leveling-Vergleich](https://raw.githubusercontent.com/Bodengriller/3DN-ASWX1-TFTFW-FoFi/master/compare_Tools-Leveling.png)
+![More-Vergleich](https://raw.githubusercontent.com/Bodengriller/3DN-ASWX1-TFTFW-FoFi/master/compare_More.png)
   
 ## Sonstiges  
 Test & Forschung ergab;
